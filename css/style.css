@@ -68,17 +68,6 @@ hr {
   margin-left: 30px;
   padding-right: 100px; }
 
-.caption {
-  top: 0;
-  left: 20;
-  position: absolute;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: "Pontano Sans", sans-serif;
-  letter-spacing: 1px;
-  padding: 5px;
-  border-top: 1px solid #333333; }
-
 #work {
   background-color: #ffffff;
   padding: 50px;
@@ -97,14 +86,22 @@ hr {
     margin-bottom: 30px; }
   #work .header {
     color: #333333; }
-
-.work-img {
-  position: relative;
-  height: 230px;
-  overflow: hidden; }
-
-.artwork {
-  border-top: 1px solid #333333; }
+  #work .work-img {
+    position: relative;
+    height: 230px;
+    overflow: hidden; }
+  #work .artwork {
+    border-top: 1px solid #333333; }
+  #work .caption {
+    top: 0;
+    left: 20;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Pontano Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-top: 1px solid #333333; }
 
 .contact {
   padding: 50px;
