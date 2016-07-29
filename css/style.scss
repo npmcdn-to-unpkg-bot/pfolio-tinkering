@@ -1,0 +1,280 @@
+$teal: #006666;
+$mint: #ccffe6;
+$light-gray: #cccccc;
+$medium-gray: #666666;
+$dark-gray: #333333;
+$white: #ffffff;
+$illustration-flag: $teal;
+$data-flag: #00cc7a;
+$identity-flag: #ff7733;
+$dev-flag: #708090;
+$print-flag: #993333;
+
+@mixin project-categories($category) {
+ @if $category == illustration {
+   background-color: $illustration-flag;
+ }
+}
+
+body {
+  background-color: $mint;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 100px;
+}
+a{
+  color: $teal;
+}
+a:visited{
+  color: $light-gray;
+}
+a:hover{
+  color: $dark-gray;
+}
+h1{
+  line-height: 42px;
+  margin:0px;
+}
+h2{
+  line-height: 38px;
+
+}
+h3{
+  line-height: 30px;
+}
+a:visited{
+  color: $teal;
+}
+.header{
+  margin-bottom:50px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: $medium-gray;
+    border-style: dashed;
+}
+
+#nav-header{
+  font-size: 24px;
+  color: $white;
+  padding-left: 50px;
+}
+
+.navbar{
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-nav{
+  font-family: 'Pontano Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.navbar .social-icons{
+  padding-right: 30px;
+}
+.social-icons a{
+  color: $dark-gray;
+}
+
+.social-icons a:visited{
+  color: $dark-gray;
+}
+.social-icons a:hover{
+  color: $medium-gray;
+}
+
+.about{
+  padding: 80px 0px;
+}
+.intro-text{
+  margin-left: 30px;
+  padding-right: 100px;
+}
+.portfolio{
+  background-color: $white;
+  padding: 50px;
+}
+.portfolio .row{
+  margin-bottom: 30px;
+}
+.caption {
+    top:0;
+    left:20;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Pontano Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-top: 1px solid $dark-gray;
+
+
+}
+#work{
+  color: $white;
+  .illustration {
+      @include project-categories(illustration);
+
+  }
+}
+
+.data{
+    background-color: $data-flag;
+    color: #fff;
+}
+.identity{
+    background-color: $identity-flag;
+    color: #fff;
+}
+.dev{
+  background-color: $dev-flag;
+  color: #fff
+}
+.print{
+  background-color: $print-flag;
+  color: #fff
+}
+
+
+.work-img{
+    position:relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.artwork{
+  border-top: 1px solid $dark-gray;
+}
+
+.contact{
+  padding:50px;
+  margin-bottom: 30px;
+}
+.contact .social-icons a:hover{
+  color: $teal;
+}
+.footer{
+  background-color: $dark-gray;
+  color: $white;
+  padding: 50px;
+  font-family: 'Pontano Sans', sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body{
+    padding-top: 0px;
+    font-size: 20px;
+  }
+  .navbar {
+    position: relative;
+  }
+    #nav-header {
+      padding-left:30px;
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+  .navbar .social-icons{
+    margin-left: -15px;
+  }
+  .navbar .social-icons{
+    font-size:24px;
+  }
+  .about{
+    padding: 40px 0px;
+  }
+  h1{
+    line-height: 44px;
+  }
+  .intro-text{
+    margin-left:0px;
+    padding:0px 65px 10px 10px;
+  }
+  .img-circle{
+    padding-top: 10px;
+  }
+  .portfolio{
+    padding: 30px;
+  }
+  .portfolio .row{
+    margin-bottom: 0px;
+  }
+  .header{
+    margin-bottom: 40px;
+  }
+  .work-img{
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .caption{
+    font-size: 18px;
+  }
+  .footer{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    padding-top: 0px;
+    font-size: 25px;
+  }
+  .navbar {
+    position: relative;
+  }
+    #nav-header {
+        padding-left:15px;
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 50px;
+    }
+  .navbar .social-icons{
+    margin-left: -15px;
+  }
+  .navbar .social-icons{
+    font-size:24px;
+  }
+  .about{
+    padding: 40px 0px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .intro-text{
+    margin-left:0px;
+    margin-top:15px;
+    padding: 25px;
+  }
+  .portfolio{
+    padding: 30px;
+  }
+  .portfolio .row{
+    margin-bottom: 0px;
+  }
+  .header{
+    margin-bottom: 40px;
+  }
+  .work-img{
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .caption{
+    font-size: 16px;
+  }
+  .contact {
+   padding:30px;
+  }
+  .contact .social-icons{
+    font-size: 22px;
+  }
+  .footer{
+    font-size: 14px;
+  }
+}
