@@ -1,18 +1,16 @@
 body {
   background-color: #ccffe6;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-weight: 400;
   font-size: 16px;
   padding-top: 100px; }
 
 a {
   color: #006666; }
-
-a:visited {
-  color: #cccccc; }
-
-a:hover {
-  color: #333333; }
+  a:hover {
+    color: #333333; }
+  a:visited {
+    color: #cccccc; }
 
 h1 {
   line-height: 42px;
@@ -23,9 +21,6 @@ h2 {
 
 h3 {
   line-height: 30px; }
-
-a:visited {
-  color: #006666; }
 
 .header {
   margin-bottom: 50px; }
@@ -52,7 +47,7 @@ hr {
   padding-bottom: 20px; }
 
 .navbar-nav {
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: "Pontano Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px; }
 
@@ -88,7 +83,7 @@ hr {
   position: absolute;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: "Pontano Sans", sans-serif;
   letter-spacing: 1px;
   padding: 5px;
   border-top: 1px solid #333333; }
@@ -125,7 +120,7 @@ hr {
   background-color: #333333;
   color: #ffffff;
   padding: 50px;
-  font-family: 'Pontano Sans', sans-serif; }
+  font-family: "Pontano Sans", sans-serif; }
 
 @media screen and (max-width: 768px) {
   body {
