@@ -10,9 +10,24 @@ $identity-flag: #ff7733;
 $dev-flag: #708090;
 $print-flag: #993333;
 
-@mixin project-categories($category) {
+@mixin work-category($category) {
  @if $category == illustration {
    background-color: $illustration-flag;
+ }
+ @else if $category == data {
+   background-color: $data-flag;
+ }
+ @else if $category == identity{
+   background-color: $identity-flag;
+ }
+ @else if $category == dev {
+   background-color: $dev-flag
+ }
+ @else if $category == print{
+   background-color: $print-flag;
+ }
+ @else {
+   background-color: $dark-gray;
  }
 }
 
@@ -122,26 +137,20 @@ hr {
 #work{
   color: $white;
   .illustration {
-      @include project-categories(illustration);
-
+    @include work-category(illustration);
   }
-}
-
-.data{
-    background-color: $data-flag;
-    color: #fff;
-}
-.identity{
-    background-color: $identity-flag;
-    color: #fff;
-}
-.dev{
-  background-color: $dev-flag;
-  color: #fff
-}
-.print{
-  background-color: $print-flag;
-  color: #fff
+  .data {
+    @include work-category(data);
+  }
+  .identity{
+    @include work-category(identity);
+  }
+  .dev{
+    @include work-category(dev);
+  }
+  .print{
+    @include work-category(print);
+  }
 }
 
 

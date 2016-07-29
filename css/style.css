@@ -97,22 +97,14 @@ hr {
   color: #ffffff; }
   #work .illustration {
     background-color: #006666; }
-
-.data {
-  background-color: #00cc7a;
-  color: #fff; }
-
-.identity {
-  background-color: #ff7733;
-  color: #fff; }
-
-.dev {
-  background-color: #708090;
-  color: #fff; }
-
-.print {
-  background-color: #993333;
-  color: #fff; }
+  #work .data {
+    background-color: #00cc7a; }
+  #work .identity {
+    background-color: #ff7733; }
+  #work .dev {
+    background-color: #708090; }
+  #work .print {
+    background-color: #993333; }
 
 .work-img {
   position: relative;
