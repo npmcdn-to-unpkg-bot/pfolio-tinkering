@@ -101,13 +101,12 @@ hr {
 }
 .social-icons a{
   color: $dark-gray;
-}
-
-.social-icons a:visited{
-  color: $dark-gray;
-}
-.social-icons a:hover{
-  color: $medium-gray;
+  &:hover{
+    color: $medium-gray;
+  }
+  &:visited{
+    color: $dark-gray;
+  }
 }
 
 .about{
@@ -116,13 +115,6 @@ hr {
 .intro-text{
   margin-left: 30px;
   padding-right: 100px;
-}
-.portfolio{
-  background-color: $white;
-  padding: 50px;
-}
-.portfolio .row{
-  margin-bottom: 30px;
 }
 .caption {
     top:0;
@@ -138,6 +130,8 @@ hr {
 
 }
 #work{
+  background-color: $white;
+  padding: 50px;
   color: $white;
   .illustration {
     @include work-category(illustration);
@@ -153,6 +147,12 @@ hr {
   }
   .print{
     @include work-category(print);
+  }
+  .row{
+    margin-bottom: 30px;
+  }
+  .header{
+    color: $dark-gray;
   }
 }
 
