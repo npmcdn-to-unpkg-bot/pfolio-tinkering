@@ -14,6 +14,11 @@ $print-flag: #993333;
 $serif-font: 'Lora', serif;
 $sans-font: 'Pontano Sans', sans-serif;
 
+$solid-border: 1px solid $dark-gray;
+$lrg-padding: 50px;
+$med-margin: 30px;
+
+
 @mixin work-category($category) {
  @if $category == illustration {
    background-color: $illustration-flag;
@@ -119,7 +124,7 @@ hr {
 
 #work{
   background-color: $white;
-  padding: 50px;
+  padding: $lrg-padding;
   color: $white;
   .illustration {
     @include work-category(illustration);
@@ -137,7 +142,7 @@ hr {
     @include work-category(print);
   }
   .row{
-    margin-bottom: 30px;
+    margin-bottom: $med-margin;
   }
   .header{
     color: $dark-gray;
@@ -148,7 +153,7 @@ hr {
       overflow: hidden;
   }
   .artwork{
-    border-top: 1px solid $dark-gray;
+    border-top: $solid-border;
   }
   .caption {
       top:0;
@@ -159,15 +164,15 @@ hr {
       font-family: $sans-font;
       letter-spacing: 1px;
       padding: 5px;
-      border-top: 1px solid $dark-gray;
+      border-top: $solid-border;
 
 
   }
 }
 
 .contact{
-  padding:50px;
-  margin-bottom: 30px;
+  padding:$lrg-padding;
+  margin-bottom: $med-margin;
 }
 .contact .social-icons a:hover{
   color: $teal;
@@ -175,7 +180,7 @@ hr {
 .footer{
   background-color: $dark-gray;
   color: $white;
-  padding: 50px;
+  padding: $lrg-padding;
   font-family: $sans-font;
 }
 @media screen and (max-width: 768px) {
@@ -221,7 +226,7 @@ hr {
   }
   .work-img{
     height: 400px;
-    margin-bottom: 30px;
+    margin-bottom: $med-margin;
   }
   .caption{
     font-size: 18px;
@@ -273,7 +278,7 @@ hr {
   }
   .work-img{
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: $med-margin;
   }
   .caption{
     font-size: 16px;
