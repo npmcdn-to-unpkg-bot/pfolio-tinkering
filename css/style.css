@@ -13,7 +13,7 @@ a {
     color: #cccccc; }
 
 h1 {
-  line-height: 42px;
+  line-height: 40px;
   margin: 0px; }
 
 h2 {
@@ -32,9 +32,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
-  border-color: #666666;
-  border-style: dashed; }
+  border: 1px dashed #666666; }
 
 #nav-header {
   font-size: 24px;
@@ -88,7 +86,7 @@ hr {
     color: #333333; }
   #work .work-img {
     position: relative;
-    height: 230px;
+    height: 240px;
     overflow: hidden; }
   #work .artwork {
     border-top: 1px solid #333333; }
@@ -106,9 +104,8 @@ hr {
 .contact {
   padding: 50px;
   margin-bottom: 30px; }
-
-.contact .social-icons a:hover {
-  color: #006666; }
+  .contact .social-icons a:hover {
+    color: #006666; }
 
 .footer {
   background-color: #333333;
@@ -119,49 +116,40 @@ hr {
 @media screen and (max-width: 768px) {
   body {
     padding-top: 0px;
-    font-size: 20px; }
+    font-size: 24px; }
 
   .navbar {
     position: relative; }
-
-  #nav-header {
-    padding-left: 30px;
-    font-size: 36px;
-    margin-bottom: 5px; }
-
-  .navbar .social-icons {
-    margin-left: -15px; }
-
-  .navbar .social-icons {
-    font-size: 24px; }
+    .navbar .social-icons {
+      margin-left: -15px;
+      font-size: 24px; }
+    .navbar #nav-header {
+      padding-left: 30px;
+      font-size: 36px;
+      margin-bottom: 5px; }
 
   .about {
-    padding: 40px 0px; }
+    padding: 30px 0px; }
+    .about .intro-text {
+      margin-left: 0px;
+      padding: 0px 65px 10px 10px; }
+    .about .img-circle {
+      padding-top: 10px; }
 
   h1 {
-    line-height: 44px; }
-
-  .intro-text {
-    margin-left: 0px;
-    padding: 0px 65px 10px 10px; }
-
-  .img-circle {
-    padding-top: 10px; }
-
-  .portfolio {
-    padding: 30px; }
-
-  .portfolio .row {
-    margin-bottom: 0px; }
+    line-height: 40px; }
 
   .header {
-    margin-bottom: 40px; }
+    margin-bottom: 50px; }
 
-  .work-img {
-    height: 400px;
-    margin-bottom: 30px; }
-
-  .caption {
+  #work .portfolio {
+    padding: 30px; }
+    #work .portfolio .row {
+      margin-bottom: 0px; }
+  #work .work-img {
+    height: 480px;
+    margin-bottom: 50px; }
+  #work .caption {
     font-size: 18px; }
 
   .footer {
@@ -169,55 +157,46 @@ hr {
 @media screen and (max-width: 480px) {
   body {
     padding-top: 0px;
-    font-size: 25px; }
+    font-size: 24px; }
 
   .navbar {
     position: relative; }
-
-  #nav-header {
-    padding-left: 15px;
-    font-size: 36px;
-    line-height: 40px;
-    margin-bottom: 50px; }
-
-  .navbar .social-icons {
-    margin-left: -15px; }
-
-  .navbar .social-icons {
-    font-size: 24px; }
+    .navbar .social-icons {
+      margin-left: -15px;
+      font-size: 24px; }
+    .navbar #nav-header {
+      padding-left: 15px;
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 50px; }
 
   .about {
-    padding: 40px 0px; }
+    padding: 30px 0px; }
+    .about .intro-text {
+      margin-left: 0px;
+      margin-top: 15px;
+      padding: 25px; }
 
   h1 {
-    font-size: 30px; }
-
-  .intro-text {
-    margin-left: 0px;
-    margin-top: 15px;
-    padding: 25px; }
-
-  .portfolio {
-    padding: 30px; }
-
-  .portfolio .row {
-    margin-bottom: 0px; }
+    font-size: 36px; }
 
   .header {
-    margin-bottom: 40px; }
+    margin-bottom: 50px; }
 
-  .work-img {
-    height: 150px;
+  #work .portfolio {
+    padding: 30px; }
+    #work .portfolio .row {
+      margin-bottom: 0px; }
+  #work .work-img {
+    height: 160px;
     margin-bottom: 30px; }
-
-  .caption {
+  #work .caption {
     font-size: 16px; }
 
   .contact {
     padding: 30px; }
-
-  .contact .social-icons {
-    font-size: 22px; }
+    .contact .social-icons {
+      font-size: 24px; }
 
   .footer {
     font-size: 14px; } }

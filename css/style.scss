@@ -15,9 +15,14 @@ $serif-font: 'Lora', serif;
 $sans-font: 'Pontano Sans', sans-serif;
 
 $solid-border: 1px solid $dark-gray;
-$lrg-padding: 50px;
-$med-margin: 30px;
+$dashed-border: 1px dashed $medium-gray;
+$lrg-spacing: 50px;
+$med-spacing: 30px;
 
+$base-font-size: 12px;
+$base-line-height: 30px;
+
+$work-img-height: 240px;
 
 @mixin work-category($category) {
  @if $category == illustration {
@@ -44,7 +49,7 @@ body {
   background-color: $mint;
   font-family: $serif-font;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $base-font-size + 4;
   padding-top: 100px;
 }
 a{
@@ -58,19 +63,19 @@ a{
 }
 
 h1{
-  line-height: 42px;
+  line-height: $base-line-height + 10;
   margin:0px;
 }
 h2{
-  line-height: 38px;
+  line-height: $base-line-height + 8 ;
 
 }
 h3{
-  line-height: 30px;
+  line-height: $base-line-height;
 }
 
 .header{
-  margin-bottom:50px;
+  margin-bottom:$lrg-spacing;
 }
 
 hr {
@@ -80,15 +85,13 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 1px;
-    border-color: $medium-gray;
-    border-style: dashed;
+    border: $dashed-border
 }
 
 #nav-header{
-  font-size: 24px;
+  font-size: $base-font-size * 2;
   color: $white;
-  padding-left: 50px;
+  padding-left: $lrg-spacing;
 }
 
 .navbar{
@@ -102,7 +105,7 @@ hr {
   letter-spacing: 1.5px;
 }
 .navbar .social-icons{
-  padding-right: 30px;
+  padding-right: $med-spacing;
 }
 .social-icons a{
   color: $dark-gray;
@@ -118,13 +121,13 @@ hr {
   padding: 80px 0px;
 }
 .intro-text{
-  margin-left: 30px;
+  margin-left: $med-spacing;
   padding-right: 100px;
 }
 
 #work{
   background-color: $white;
-  padding: $lrg-padding;
+  padding: $lrg-spacing;
   color: $white;
   .illustration {
     @include work-category(illustration);
@@ -142,14 +145,14 @@ hr {
     @include work-category(print);
   }
   .row{
-    margin-bottom: $med-margin;
+    margin-bottom: $med-spacing;
   }
   .header{
     color: $dark-gray;
   }
   .work-img{
       position:relative;
-      height: 230px;
+      height: $work-img-height;
       overflow: hidden;
   }
   .artwork{
@@ -160,7 +163,7 @@ hr {
       left:20;
       position: absolute;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: $base-font-size;
       font-family: $sans-font;
       letter-spacing: 1px;
       padding: 5px;
@@ -171,125 +174,140 @@ hr {
 }
 
 .contact{
-  padding:$lrg-padding;
-  margin-bottom: $med-margin;
+  padding:$lrg-spacing;
+  margin-bottom: $med-spacing;
+  .social-icons a{
+    &:hover{
+        color: $teal;
+    }
+  }
 }
-.contact .social-icons a:hover{
-  color: $teal;
-}
+
 .footer{
   background-color: $dark-gray;
   color: $white;
-  padding: $lrg-padding;
+  padding: $lrg-spacing;
   font-family: $sans-font;
 }
+
+
 @media screen and (max-width: 768px) {
   body{
     padding-top: 0px;
-    font-size: 20px;
+    font-size: $base-font-size * 2;
   }
   .navbar {
     position: relative;
-  }
+    .social-icons{
+      margin-left: -15px;
+      font-size:$base-font-size * 2;
+    }
     #nav-header {
-      padding-left:30px;
-      font-size: 36px;
+      padding-left:$med-spacing;
+      font-size: $base-font-size * 3;
       margin-bottom: 5px;
     }
-  .navbar .social-icons{
-    margin-left: -15px;
   }
-  .navbar .social-icons{
-    font-size:24px;
-  }
+
+
   .about{
-    padding: 40px 0px;
+    padding: $med-spacing 0px;
+    .intro-text{
+      margin-left:0px;
+      padding:0px 65px 10px 10px;
+    }
+    .img-circle{
+      padding-top: 10px;
+    }
   }
   h1{
-    line-height: 44px;
+    line-height: $base-line-height + 10;
   }
-  .intro-text{
-    margin-left:0px;
-    padding:0px 65px 10px 10px;
-  }
-  .img-circle{
-    padding-top: 10px;
-  }
-  .portfolio{
-    padding: 30px;
-  }
-  .portfolio .row{
-    margin-bottom: 0px;
-  }
+
+
   .header{
-    margin-bottom: 40px;
+    margin-bottom: $lrg-spacing;
   }
-  .work-img{
-    height: 400px;
-    margin-bottom: $med-margin;
+  #work{
+      .portfolio{
+        padding: $med-spacing;
+        .row{
+          margin-bottom: 0px;
+        }
+      }
+      .work-img{
+        height: $work-img-height * 2;
+        margin-bottom: $lrg-spacing;
+      }
+      .caption{
+        font-size: $base-font-size + 6;
+      }
   }
-  .caption{
-    font-size: 18px;
-  }
+
   .footer{
-    font-size: 14px;
+    font-size: $base-font-size + 2;
   }
 }
 
 @media screen and (max-width: 480px) {
   body{
     padding-top: 0px;
-    font-size: 25px;
+    font-size: $base-font-size * 2;
   }
   .navbar {
     position: relative;
-  }
-    #nav-header {
-        padding-left:15px;
-      font-size: 36px;
-      line-height: 40px;
-      margin-bottom: 50px;
+    .social-icons{
+      margin-left: -15px;
+      font-size:$base-font-size * 2;
     }
-  .navbar .social-icons{
-    margin-left: -15px;
+    #nav-header {
+      padding-left:15px;
+      font-size: $base-font-size * 3;
+      line-height: $base-line-height + 10;
+      margin-bottom: $lrg-spacing;
+    }
   }
-  .navbar .social-icons{
-    font-size:24px;
-  }
+
   .about{
-    padding: 40px 0px;
+    padding: $med-spacing 0px;
+    .intro-text{
+      margin-left:0px;
+      margin-top:15px;
+      padding: 25px;
+    }
   }
   h1{
-    font-size: 30px;
+    font-size: $base-font-size * 3;
   }
-  .intro-text{
-    margin-left:0px;
-    margin-top:15px;
-    padding: 25px;
-  }
-  .portfolio{
-    padding: 30px;
-  }
-  .portfolio .row{
-    margin-bottom: 0px;
-  }
+
   .header{
-    margin-bottom: 40px;
+    margin-bottom: $lrg-spacing;
   }
-  .work-img{
-    height: 150px;
-    margin-bottom: $med-margin;
+
+  #work{
+      .portfolio{
+        padding: $med-spacing;
+        .row{
+          margin-bottom: 0px;
+        }
+      }
+      .work-img{
+        height: $work-img-height / 1.5;
+        margin-bottom: $med-spacing;
+      }
+      .caption{
+        font-size: $base-font-size + 4;
+      }
   }
-  .caption{
-    font-size: 16px;
-  }
+
+
   .contact {
-   padding:30px;
-  }
-  .contact .social-icons{
-    font-size: 22px;
+   padding: $med-spacing;
+   .social-icons{
+     font-size: $base-font-size * 2;
+   }
   }
   .footer{
-    font-size: 14px;
+    font-size: $base-font-size + 2;
   }
 }
