@@ -1,0 +1,20 @@
+@mixin work-category($category) {
+ @if $category == illustration {
+   background-color: $illustration-flag;
+ }
+ @else if $category == data {
+   background-color: $data-flag;
+ }
+ @else if $category == identity{
+   background-color: $identity-flag;
+ }
+ @else if $category == dev {
+   background-color: $dev-flag
+ }
+ @else if $category == print{
+   background-color: $print-flag;
+ }
+ @else {
+   background-color: $dark-gray;
+ }
+}
