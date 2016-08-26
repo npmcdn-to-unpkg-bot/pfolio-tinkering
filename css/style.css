@@ -62,8 +62,7 @@ hr {
 #slideshow {
   position: relative;
   height: 400px;
-  overflow: hidden;
-  text-align: center; }
+  overflow: hidden; }
   #slideshow img {
     position: absolute;
     top: 0;
