@@ -108,7 +108,6 @@ hr {
 #work{
   background-color: $white;
   padding: $lrg-spacing;
-  color: $white;
   .illustration {
     @include work-category(illustration);
   }
@@ -124,8 +123,8 @@ hr {
   .print{
     @include work-category(print);
   }
-  .header{
-    color: $dark-gray;
+  .project-nav{
+      margin-bottom: $lrg-spacing;
   }
   .work-img{
       position:relative;

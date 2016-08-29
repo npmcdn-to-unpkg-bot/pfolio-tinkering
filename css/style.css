@@ -84,20 +84,24 @@ hr {
 
 #work {
   background-color: #ffffff;
-  padding: 50px;
-  color: #ffffff; }
+  padding: 50px; }
   #work .illustration {
-    background-color: #006666; }
+    background-color: #006666;
+    color: #ffffff; }
   #work .data {
-    background-color: #00cc7a; }
+    background-color: #00cc7a;
+    color: #ffffff; }
   #work .identity {
-    background-color: #ff7733; }
+    background-color: #ff7733;
+    color: #ffffff; }
   #work .dev {
-    background-color: #708090; }
+    background-color: #708090;
+    color: #ffffff; }
   #work .print {
-    background-color: #993333; }
-  #work .header {
-    color: #333333; }
+    background-color: #993333;
+    color: #ffffff; }
+  #work .project-nav {
+    margin-bottom: 50px; }
   #work .work-img {
     position: relative;
     height: 240px;
