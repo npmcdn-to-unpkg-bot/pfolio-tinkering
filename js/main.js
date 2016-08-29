@@ -39,8 +39,13 @@ $(function() {
 });
 
 // Isotope grid resizing
-$('.grid').isotope({
+var $grid = $('.grid').isotope({
   // options
   itemSelector: '.work-img',
   layoutMode: 'fitRows'
+});
+    //function for filtering
+$('.project-nav').on('click', 'button', function(){
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
 });
