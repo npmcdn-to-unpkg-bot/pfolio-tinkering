@@ -124,9 +124,6 @@ hr {
   .print{
     @include work-category(print);
   }
-  .row{
-    margin-bottom: $med-spacing;
-  }
   .header{
     color: $dark-gray;
   }
@@ -134,6 +131,7 @@ hr {
       position:relative;
       height: $work-img-height;
       overflow: hidden;
+      margin-bottom: $med-spacing;
   }
   .artwork{
     border-top: $solid-border;

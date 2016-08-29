@@ -96,14 +96,13 @@ hr {
     background-color: #708090; }
   #work .print {
     background-color: #993333; }
-  #work .row {
-    margin-bottom: 30px; }
   #work .header {
     color: #333333; }
   #work .work-img {
     position: relative;
     height: 240px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 30px; }
   #work .artwork {
     border-top: 1px solid #333333; }
   #work .caption {

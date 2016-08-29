@@ -37,3 +37,10 @@ function slideSwitch() {
 $(function() {
     setInterval( "slideSwitch()", 5000 );  // Call function at 5-second intervals
 });
+
+// Isotope grid resizing
+$('.grid').isotope({
+  // options
+  itemSelector: '.work-img',
+  layoutMode: 'fitRows'
+});
