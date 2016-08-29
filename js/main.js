@@ -5,7 +5,7 @@ $('#menu-button').click(function(){
 
 // Smooth page scroll from nav items
 $(function() {
-    $('ul.nav a').bind('click',function(event){
+    $('ul.nav a').on('click',function(event){
         var $anchor = $(this);
 
         $('html, body').stop().animate({
