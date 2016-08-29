@@ -1,5 +1,5 @@
 $('#menu-button').click(function(){
-    $('#menu').toggle();
+    $('.navbar-nav').toggle();
 });
 
 // Slideshow functions

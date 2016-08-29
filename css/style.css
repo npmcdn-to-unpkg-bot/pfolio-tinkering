@@ -43,21 +43,20 @@ hr {
   border: none;
   padding-top: 20px;
   padding-bottom: 20px; }
+  .navbar .social-icons {
+    padding-right: 30px; }
+    .navbar .social-icons a {
+      color: #333333; }
+      .navbar .social-icons a:hover {
+        color: #666666; }
+      .navbar .social-icons a:visited {
+        color: #333333; }
 
 .navbar-nav {
   font-family: "Pontano Sans", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.5px; }
-
-.navbar .social-icons {
-  padding-right: 30px; }
-
-.social-icons a {
-  color: #333333; }
-  .social-icons a:hover {
-    color: #666666; }
-  .social-icons a:visited {
-    color: #333333; }
+  letter-spacing: 1.5px;
+  display: none; }
 
 #slideshow {
   position: relative;

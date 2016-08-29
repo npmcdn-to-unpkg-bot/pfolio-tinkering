@@ -54,23 +54,24 @@ hr {
   border: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  .social-icons{
+    padding-right: $med-spacing;
+    a{
+      color: $dark-gray;
+      &:hover{
+        color: $medium-gray;
+      }
+      &:visited{
+        color: $dark-gray;
+      }
+  }
+}
 }
 .navbar-nav{
   font-family: $sans-font;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-}
-.navbar .social-icons{
-  padding-right: $med-spacing;
-}
-.social-icons a{
-  color: $dark-gray;
-  &:hover{
-    color: $medium-gray;
-  }
-  &:visited{
-    color: $dark-gray;
-  }
+  display: none;
 }
 
 #slideshow{
