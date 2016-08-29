@@ -120,8 +120,10 @@ hr {
 .contact {
   padding: 50px;
   margin-bottom: 30px; }
-  .contact .social-icons a:hover {
-    color: #006666; }
+  .contact .social-icons a {
+    color: #666666; }
+    .contact .social-icons a:hover {
+      color: #006666; }
 
 .footer {
   background-color: #333333;

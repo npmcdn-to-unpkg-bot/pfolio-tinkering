@@ -1,5 +1,19 @@
+// Navbar toggle display
 $('#menu-button').click(function(){
     $('.navbar-nav').toggle();
+});
+
+// Smooth page scroll from nav items
+$(function() {
+    $('ul.nav a').bind('click',function(event){
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+
+        event.preventDefault();
+    });
 });
 
 // Slideshow functions

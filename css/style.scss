@@ -157,6 +157,7 @@ hr {
   padding:$lrg-spacing;
   margin-bottom: $med-spacing;
   .social-icons a{
+      color: $medium-gray;
     &:hover{
         color: $teal;
     }
