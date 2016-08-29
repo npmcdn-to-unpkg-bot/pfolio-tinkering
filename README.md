@@ -5,10 +5,7 @@ Playing around with jQuery stuff.
 <!---
 User Stories
 
-Basic functionality using Javascript and jQuery:
-
-    “I’d like to see screenshots of a few of your portfolio projects in a slideshow,” (this page shows an example).
-    http://stackoverflow.com/questions/12068734/jquery-simple-image-slideshow-tutorial
+Basic functionality using Javascript and jQuery:    
 
     “I want to see your projects organized like cards, that rearrange as I resize my browser window.”
         “I also want to be able to filter through your portfolio projects using buttons that say things like, ‘HTML & CSS’, ‘Javascript & jQuery’ etc., that make only corresponding projects visible,” (like this page).
